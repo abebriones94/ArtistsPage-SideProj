@@ -34,21 +34,21 @@ body {
   align-items: center;
   justify-content: center;
   color: rgba(26, 26, 26, 0.763);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .left-slide h1 {
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 30px;
+  margin-bottom: 50px;
   margin-top: -30px;
+  font-style: italic;
 }
 
 .left-slide > div > img {
   width: 450px;
   height: 450px;
-  object-fit:cover;
-  border-radius: 20px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .right-slide {
@@ -71,20 +71,20 @@ body {
   width: 930px;
   height: 764px;
   object-fit: cover;
-  padding: 10px;
+  padding: 3px;
 }
 
 button {
-  background-color: white;
+  background-color: rgb(243, 236, 204);
   border: none;
   color: grey;
   cursor: pointer;
-  font-size: 16px;
-  padding: 14px;
+  font-size: 13px;
+  padding: 12px;
 }
 
 button:hover {
-  color: rgba(0, 0, 0, 0.386);
+  color: rgba(0, 0, 0, 0.886);
 }
 
 button:focus {
@@ -108,4 +108,29 @@ button:focus {
   transform: translateY(-100%);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.left-slide p {
+  margin-top: 35px;
+  text-shadow: -3px 0px 10px #fff, 3px 0px 10px #fff, 0px 0px 10px #fff,
+    -3px -3px 10px #fff, 3px -3px 10px #fff, 0px -3px 10px #fff,
+    -3px 3px 10px #fff, 3px 3px 10px #fff, 0px 3px 10px #fff;
+}
+
+.quote1 {
+  color: rgb(11, 10, 10);
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 30px #fff, 0 0 40px #0ff,
+    0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+  font-size: 25px;
+  font-family: fantasy;
+}
+
+.quote2 {
+  font-family: fantasy;
+  padding-top: 40px;
+  font-size: 20px;
+  padding-left: 200px;
+  color: rgb(50, 45, 45);
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 30px #fff, 0 0 40px #0ff,
+    0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
 }
