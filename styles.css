@@ -1,4 +1,5 @@
 * {
+  /* Universal selector - Margin and Padding set to 0 */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -14,12 +15,12 @@ body {
   overflow: hidden;
   width: 100vw;
   height: 100vh;
-  background-color: rgb(25, 22, 22);
+  background-color: rgba(17, 16, 16, 0.937);
 }
 
 .left-slide {
   height: 100%;
-  width: 35%;
+  width: 35%; /* 35% of the container*/
   position: absolute;
   top: 0;
   left: 0;
@@ -27,9 +28,10 @@ body {
 }
 
 .left-slide > div {
-  height: 100%;
+  /* Targeting immediate div */
+  height: 100%; /* One div should take up entire height  */
   width: 100%;
-  display: flex;
+  display: flex; /* Each div is affected */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -56,7 +58,7 @@ body {
   position: absolute;
   top: 0;
   left: 35%;
-  width: 65%;
+  width: 65%; /* Positioning absoulte within container  */
   transition: transform 0.5s ease-in-out;
 }
 
@@ -68,10 +70,11 @@ body {
 
 .right-slide > div > img {
   float: left;
-  width: 930px;
+  width: 940px;
   height: 764px;
   object-fit: cover;
-  padding: 3px;
+  padding: 20px;
+  border: 7mm ridge rgba(86, 40, 3, 0.819);
 }
 
 button {
@@ -118,6 +121,7 @@ button:focus {
 }
 
 .quote1 {
+  font-weight: bold;
   color: rgb(11, 10, 10);
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 30px #fff, 0 0 40px #0ff,
     0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
@@ -127,8 +131,9 @@ button:focus {
 
 .quote2 {
   font-family: fantasy;
+  font-style: italic;
   padding-top: 40px;
-  font-size: 20px;
+  font-size: 15px;
   padding-left: 200px;
   color: rgb(50, 45, 45);
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 30px #fff, 0 0 40px #0ff,
